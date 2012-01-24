@@ -1,0 +1,99 @@
+@import url(http://fonts.googleapis.com/css?family=Brawler|Open+Sans:300)
+
+body
+  background: url('/images/background.png')
+  font-family: Brawler, Cambria, Georgia, 'Times New Roman'
+  font-size: 16px
+  font-weight: 400
+  line-height: 1.5em
+
+section
+  background: rgba(255, 255, 255, 0.5)
+  
+  div
+    margin: 5em auto
+    position: relative
+    width: 800px
+    padding: 3em
+
+  h1
+    text-align: right
+    color: #FF0F95
+  
+  h2
+    color: #000
+
+p
+  margin: 0 10em 0 0
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-weight: 300
+  margin: 0 0 1em
+  text-shadow: 1px 1px 3px #ddd
+
+h1
+  font-size: 2.6em
+  text-align: center
+
+header
+  padding: 6em 0 0
+
+  h1
+    font-size: 5em
+
+nav
+  margin: 0 auto
+  padding: 0
+  text-align: center
+  position: relative
+  z-index: 99999
+  width: 66em
+  background: rgba(89, 168, 15, 0.75)
+
+  ul
+    padding: 0
+    margin: 0
+    display: inline-block
+    list-style-type: none
+    list-style-positin: outside
+    text-align: center
+    overflow: hidden
+
+    li
+      display: inline-block
+      vertical-align: top
+
+      a
+        display: block
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+        letter-spacing: 0.1em
+        padding: 16px 40px
+        color: #fff
+        text-decoration: none
+        -o-transition: background 0.1s ease-in-out
+        -moz-transition: background 0.1 ease-in-out
+        -webkit-transition: background 0.1s ease-in-out
+        transition: background 0.1s ease-in-out
+        text-shadow: 1px 1px 0 #999
+      a:hover
+        padding: 18px 40px 14px
+        text-shadow: 1px 1px 0 #777
+  
+  ul::before,
+  ul::after
+    content: ""
+    position: absolute
+    display: block
+    border-style: solid
+    border-color: rgba(89, 168, 15, 1) transparent transparent transparent
+    bottom: -1em
+    z-index: 99999
+
+  ul::before
+    left: 0
+    border-width: 1em 0 0 1em
+          
+  ul::after 
+    right: 0
+    border-width: 1em 1em 0 0px

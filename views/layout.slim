@@ -1,0 +1,85 @@
+doctype html
+html
+  head
+    link href="/stylesheets/application.css" rel="stylesheet" type="text/css"
+    title Mankind Organization - Recognizing, promoting and awarding open-source web development
+  body
+    header
+      h1 Mankind Organization
+
+    nav.ribbon
+      ul.ribbon-content
+        li: a[href="#about"] About
+        li: a[href="#about"] Contributors
+        li: a[href="#about"] Credit
+        li: a[href="#about"] Suggestions
+        li: a[href="#about"] Award
+        li: a[href="#about"] Donate
+        li: a[href="#about"] Donors
+
+    section#about
+      div
+        h1 Open-source deserves recognition
+        p Many developers spend their much deserved spare time doing open-source software development. Yet, most of these generous individuals do not get the recognition they deserve. Mankind Organization is here to change the world of open-source by awarding contributors and promoting further development of wonderful software projects around the world.
+    
+    section#contributors
+      div
+        h1 Notable contributors
+        ul
+          li: a[href="ryanbigg.com"] Ryan Bigg
+          li: a[href="spaceghost.github.com"] Johnneylee Rollins
+
+    section#projects
+      div
+        h1 Notable projects
+        ul
+          li: a[href="github.com/spree/spree"] Spree Commerce
+          li: a[href="github.com/radar/forem"] Forem
+
+    section#credit
+      div
+        h1 Give credit
+        form
+          label I'd like to give credit to...
+          input[type="text" id="receiver" name="receiver"]
+          input[type="submit" value="Give"]
+
+    section#suggestions
+      div
+        h1 Open-source ideas
+        p The open-source community is full of people looking for projects to develop. Is there something you would like to see developed?
+        form
+          label I suggest...
+          input[type="text" placeholder="A Ruby gem to help treat caffeine addiction." id="suggestion" name="suggestion"]
+          input[type="submit" value="Suggest"]
+
+    section#award
+      div
+        h1 Honorable Developer Award
+        p At the end of each quarter, a well-deserving project or contributor will receive our award along with the funds that have been donated during the past three months. The PayPal account will be completely emptied, every cent given away to promote and encourage further open-source development.
+        p Who wins the award will be decided through a one-month poll where you can share your opinion on who you believe both deserves and needs it the most.
+        p We are constantly looking for nominees for out charitable award. Feel free to suggest a kind and deserving individual or a fascinating project.
+      
+        h2 Donate
+        p#donate I would like to donate...
+        a[href="#"] $5
+        a[href="#"] $10
+        a[href="#"] $20
+        a[href="#"] $50
+        a[href="#"] $100
+
+        h2 Nominate
+        form
+          label[for="nominator"] I,
+          input[type="text" id="nominator" name="nominator"]
+          label[for="nominee"] nominate...
+          input[type="text" id="nominee" name="nominee"]
+          input[type="submit" value="Nominate"]
+
+    section#donors
+      div
+        h1 Donors
+        h2 Thanks to these people, we are changing the world...
+        ul
+          li: a[href="mrnordstrom.com"] Daniel Nordstrom
+          li: a[href="ryanbigg.com"] Ryan Bigg
