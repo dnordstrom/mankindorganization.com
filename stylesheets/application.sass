@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Brawler|Open+Sans:300)
 
+$green: #59A80F
+
 body
   background: url('/images/background.png')
   font-family: Brawler, Cambria, Georgia, 'Times New Roman'
@@ -27,6 +29,11 @@ section
   
   h2
     color: #000
+
+a
+  color: $green
+a:hover
+  color: #000
 
 p
   margin: 0 10em 0 0
@@ -82,6 +89,7 @@ nav
         transition: background 0.1s ease-in-out
         text-shadow: 1px 1px 0 #999
       a:hover
+        color: #fff
         padding: 18px 40px 14px
         text-shadow: 1px 1px 0 #777
   
