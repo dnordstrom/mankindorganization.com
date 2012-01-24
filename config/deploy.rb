@@ -1,7 +1,7 @@
 require 'bundler/capistrano'
 
 set :application, "mankindorganization.com"
-set :repository,  "github.com:dnordstrom/mankindorganization.com.git"
+set :repository,  "git://github.com/dnordstrom/mankindorganization.com.git"
 
 set :scm, :git
 set :user, 'dnordstrom'
