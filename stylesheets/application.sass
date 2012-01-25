@@ -2,10 +2,11 @@
 
 $green: #59A80F
 $sans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+$serif: Brawler, Cambria, Georgia, 'Times New Roman'
 
 body
   background: url('/images/background.png')
-  font-family: Brawler, Cambria, Georgia, 'Times New Roman'
+  font-family: $serif
   font-size: 16px
   font-weight: 400
   line-height: 1.5em
@@ -30,6 +31,12 @@ section
   
   h2
     color: #000
+    font-size: 2em
+    text-align: right
+
+    span
+      font-size: 0.7em
+      margin: 0 0.5em
 
 a
   color: $green
@@ -113,6 +120,40 @@ nav
     border-width: 1em 1em 0 0px
 
 /**
+ * @forms
+ */
+input[type="text"],
+textarea
+  padding: 5px 10px
+  border-radius: 3px
+  border: 1px solid #eee
+  box-shadow: inset 1px 1px 0px #ddd
+  font-family: $serif
+  font-size: 1em
+  text-align: center
+
+input[type="submit"],
+input[type="button"]
+  background: #eee
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#eee))
+  background: -moz-linear-gradient(top, #fff, #eee)
+  border: 1px solid #ddd
+  border-radius: 3px
+  box-shadow: 1px 1px 3px #eee
+  display: inline-block
+  text-align: center
+  font-family: $sans
+  text-decoration: none
+  padding: 4px 25px
+  margin: 0 0 0.5em
+  font-size: 1em
+
+input[type="submit"]:hover,
+input[type="button"]:hover
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f6f6f6), to(#f9f9f9))
+  background: -moz-linear-gradient(top, #f6f6f6, #f9f9f9)
+
+/**
  * @contributors
  */
 
@@ -181,6 +222,52 @@ nav
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
     margin-left: 0.5em
     font-size: 0.8em
+
+/**
+ * @credit
+ */
+
+#credit
+  text-align: center
+
+  h1
+    text-align: center
+
+  input,
+  label
+    margin: 0 5px
+
+/**
+ * @award
+ */
+
+#award
+  input,
+  label
+    margin: 0 5px
+
+  form
+    text-align: center
+
+/**
+ * @donors
+ */
+
+#donations
+  h1,
+  h2
+    text-align: center
+
+  ul
+    text-align: center
+    list-style-position: outside
+    list-style-type: none
+    margin: 0
+    padding: 0
+
+    li
+      margin: 0
+      padding: 0
 
 footer
   position: absolute

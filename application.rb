@@ -24,10 +24,10 @@ get '/award' do
   slim :award
 end
 
-get '/donate' do
-  slim :donate
+get '/donations' do
+  slim :donations
 end
 
-get '/donors' do
-  slim :donors
+get '/blog' do
+  slim :blog
 end
